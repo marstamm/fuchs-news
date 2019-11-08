@@ -1,4 +1,4 @@
-
+<title>BYOB</title>
 
 <script>
 function play(){
@@ -10,16 +10,20 @@ function play(){
     }
 </script>
 <style>
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
 #fade-in {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-animation: fade-in 10s;
-    -moz-animation: fade-in 10s;
-    -o-animation: fade-in 10s;
-    -ms-animation: fade-in 10s;
-    animation: fade-in 10s;
-
+    -webkit-animation: fade-in 13s;
+    -moz-animation: fade-in 13s;
+    -o-animation: fade-in 13s;
+    -ms-animation: fade-in 13s;
+    animation: fade-in 13s;
 }
 
 @keyframes fade-in {
@@ -37,15 +41,13 @@ function play(){
 }
 
 p{
+    word-break: break-word;
     -webkit-animation: color-change 5s infinite;
     -moz-animation: color-change 5s infinite;
     -o-animation: color-change 5s infinite;
     -ms-animation: color-change 5s infinite;
     animation: color-change 5s infinite;
 }
-
-
-
 
 @-webkit-keyframes color-change {
     0% { color: red; }
@@ -93,8 +95,6 @@ p{
     <div id='fade-in'>
       <p style="font-size: 100px;font-weight: 700;font-family: fantasy;position: absolute;width: 100%;text-align: center;">Bring your own Bagpipes</p>
     </div>
-
-
     <video autoplay muted loop style="
     width: 100%;
     height: 100%;
