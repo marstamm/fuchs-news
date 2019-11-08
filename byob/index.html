@@ -1,0 +1,105 @@
+
+
+<script>
+function play(){
+    var audio = document.getElementById("audio");
+    button.style.display = "none"
+    main.style.display = "inline"
+    main.requestFullscreen();
+    audio.play();
+    }
+</script>
+<style>
+#fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fade-in 10s;
+    -moz-animation: fade-in 10s;
+    -o-animation: fade-in 10s;
+    -ms-animation: fade-in 10s;
+    animation: fade-in 10s;
+
+}
+
+@keyframes fade-in {
+    0% {
+    opacity: 0;
+    }
+
+    50% {
+    opacity: 0;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+p{
+    -webkit-animation: color-change 5s infinite;
+    -moz-animation: color-change 5s infinite;
+    -o-animation: color-change 5s infinite;
+    -ms-animation: color-change 5s infinite;
+    animation: color-change 5s infinite;
+}
+
+
+
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    75% { color: white; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    75% { color: white; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    75% { color: white; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    75% { color: white; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: green; }
+    75% { color: white; }
+    100% { color: red; }
+}
+</style>
+<audio id="audio" src="audio.mp3" loop></audio>
+
+
+  <input type="button" value="BYOB" onclick="play()" id="button" style="
+  font: 100 80px Arial;
+  position: absolute;
+  left: 45%;
+  top: 45%
+  ">
+
+
+<div id='main' style="display: none">
+    <div id='fade-in'>
+      <p style="font-size: 100px;font-weight: 700;font-family: fantasy;position: absolute;width: 100%;text-align: center;">Bring your own Bagpipes</p>
+    </div>
+
+
+    <video autoplay muted loop style="
+    width: 100%;
+    height: 100%;
+    ">
+        <source src="videoplayback.webm" type="video/webm">
+    </video>
+</div>
+  
